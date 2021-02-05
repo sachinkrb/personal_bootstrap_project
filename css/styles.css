@@ -2,19 +2,40 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 h1 {
     font-size: 48px;
 }
+
 .jumbotron {
-    margin:16px;
+    margin: 16px;
     font-family: Parisienne, sans-serif;
 }
+
 .navbar {
-font-family: Montserrat, sans-serif;
-margin: 16px ;
-background-color: #2d2d30;
-border: 0;
-font-size: 12px;
-letter-spacing: 4px;
-opacity: 0.9;
+    font-family: Montserrat, sans-serif;
+    margin: 16px;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+a:after {
+    background: none repeat scroll 0 0 black;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: rgb(187, 112, 238);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
 }
