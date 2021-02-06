@@ -1,5 +1,6 @@
 h1 {
     font-size: 48px;
+    text-shadow: 1px 2px;
 }
 
 .jumbotron {
@@ -29,35 +30,35 @@ img:hover {
     transform: scale(1.06, 1.06);
 }
 
-a:after {
-    background: none repeat scroll 0 0 black;
-    bottom: 0;
+.underline:after {
+    background: black;
     content: "";
     display: block;
-    height: 1px;
+    height: 2px;
     left: 50%;
-    position: absolute;
-    background: rgb(18, 18, 19);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    position: relative;
+    transition: width 0.1s ease 0s, left 0.1s ease 0s;
     width: 0;
 }
 
-a:hover:after {
-    width: 100%;
-    left: 0;
+.underline:hover:after {
+    width: 45%;
+    left: 27%;
 }
 
 .fa {
-    padding: 30px;
+    padding: 15px;
     font-size: 25px;
+    width: 65px;
     text-align: center;
-    text-decoration: none;
-    margin: 16px 16px;
+    margin: 20px 20px;
+    border-color: black;
+    border-style: solid;
     border-radius: 50%;
-    background-color: white;
     color: black;
 }
 
 .fa:hover {
-    opacity: 0.7;
+    border-color: red;
+    text-decoration: none;
 }
